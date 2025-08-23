@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPSDeploy: 一键部署企业级安全网络节点</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            color: #495057;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-top: 2em;
+        }
+        .badges {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.4em 0.8em;
+            font-size: 0.9em;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border-radius: 20px;
+            color: #fff;
+            margin: 0 5px;
+        }
+        .badge-green { background-color: #28a745; }
+        .badge-blue { background-color: #007bff; }
+        .badge-orange { background-color: #fd7e14; }
+        p { margin-bottom: 1em; }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .command-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+        }
+        .important-note {
+            color: #dc3545;
+            font-weight: bold;
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin-top: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VPSDeploy: 一键部署企业级安全网络节点 </h1>
+
+        <div class="badges">
+            <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">
+                <span class="badge badge-green">License: MIT</span>
+            </a>
+            <a href="https://github.com/[你的GitHub用户名]/VPSDeploy" target="_blank" rel="noopener noreferrer">
+                <span class="badge badge-blue">version 1.0</span>
+            </a>
+            <span class="badge badge-orange">OS Debian | Ubuntu</span>
+        </div>
+
+        <p>在当今复杂的网络环境中，拥有一个私密、稳定且高效的个人网络节点至关重要。VPSDeploy 是一个为开发者、跨境工作者和DIY爱好者设计的开源工具，旨在解决部署难题，让您<span class="highlight">只需一行命令</span>，即可在全新的服务器上部署当前最先进的 <span class="highlight">Xray (VLESS + TCP + XTLS-Reality)</span> 安全节点。</p>
+
+        <hr>
+
+        <h2>核心优势</h2>
+        <ul>
+            <li><span class="highlight">一键化脚本:</span> 告别繁琐的手动配置。整个过程全自动，无需任何交互，脚本执行完毕即可使用。</li>
+            <li><span class="highlight">最新技术方案:</span> 采用最新的 VLESS + XTLS-Reality 协议。这套组合在保证强大性能的同时，拥有顶级的伪装能力，能有效应对复杂的网络环境。</li>
+            <li><span class="highlight">智能环境检测:</span> 脚本在执行前会自动检测服务器的操作系统和运行权限，提前规避常见的部署错误，大大提高成功率。</li>
+            <li><span class="highlight">开源透明:</span> 所有代码均在 GitHub 公开，确放心使用，数据完全由您自己掌控。</li>
+        </ul>
+
+        <hr>
+
+        <h2>🛠️ 准备工作</h2>
+        <p>在开始之前，您只需要准备一样东西：</p>
+        <ul>
+            <li>一台位于海外的、<span class="highlight">全新的、纯净的</span> Debian (11+) 或 Ubuntu (20.04+) 操作系统的服务器 (VPS)。</li>
+        </ul>
+        <div class="important-note">
+            <p><strong>重要提示:</strong> 请勿在已经安装了其他网站或服务的服务器上运行此脚本，以避免端口冲突或环境污染。</p>
+        </div>
+
+        <hr>
+
+        <h2>一行命令，即刻部署</h2>
+        <p>通过 SSH 登录到您的服务器，然后复制并执行以下命令：</p>
+        <div class="command-box">
+            <code>wget -P /root https://raw.githubusercontent.com/SongZstrong/VPSDeploy/main/VPSDeploy.sh && sudo bash /root/VPSDeploy.sh</code>
+        </div>
+    </div>
+</body>
+</html>
