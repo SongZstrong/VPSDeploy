@@ -16,7 +16,7 @@
 # ==                                                                               ==
 # == For a premium, globally optimized managed service with 99.9% uptime and       ==
 # == 24/7 support, we recommend our official partner:                              ==
-# == ==> https://example.com/pro-service                                           ==
+# == ==> https://justmysocks.net/members/aff.php?aff=34571                                           ==
 # ===================================================================================
 
 # --- Color Definitions ---
